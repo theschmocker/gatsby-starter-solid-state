@@ -10,6 +10,10 @@ import Content from '../components/Content';
 import Header from '../components/header';
 import SpecialLink from '../components/SpecialLink';
 
+import pic01 from '../images/pic01.jpg';
+import pic02 from '../images/pic02.jpg';
+import pic03 from '../images/pic03.jpg';
+
 class IndexPage extends Component {
   state = {
     isScrolled: false,
@@ -48,7 +52,7 @@ class IndexPage extends Component {
         <SpotlightWrapper>
           <Spotlight>
             <a href="#" className="image">
-              <img src="images/pic01.jpg" alt="" />
+              <img src={pic01} alt="" />
             </a>
             <Content>
               <h2 className="major">Magna arcu feugiat</h2>
@@ -64,7 +68,7 @@ class IndexPage extends Component {
           </Spotlight>
           <Spotlight>
             <a href="#" className="image">
-              <img src="images/pic02.jpg" alt="" />
+              <img src={pic02} alt="" />
             </a>
             <Content>
               <h2 className="major">Tempus adipiscing</h2>
@@ -81,7 +85,7 @@ class IndexPage extends Component {
 
           <Spotlight>
             <a href="#" className="image">
-              <img src="images/pic03.jpg" alt="" />
+              <img src={pic03} alt="" />
             </a>
             <Content>
               <h2 className="major">Nullam dignissim</h2>

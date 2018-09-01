@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 
 import { debounce } from 'lodash';
 
-import Header from '../components/header';
+import NavigationBar from '../components/NavigationBar';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 
@@ -21,6 +21,7 @@ import pic03 from '../images/pic03.jpg';
 class IndexPage extends Component {
   state = {
     isScrolled: false,
+    isMounted: false,
   };
 
   constructor(props) {
@@ -37,6 +38,9 @@ class IndexPage extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.scrollListener);
+    setTimeout(() => {
+      this.setState({ isMounted: true });
+    }, 500);
   }
 
   componentWillUnmount() {
@@ -46,8 +50,8 @@ class IndexPage extends Component {
   render() {
     const { data, openMenu } = this.props;
     return (
-      <React.Fragment>
-        <Header
+      <div className={this.state.isMounted ? '' : 'is-preload'}>
+        <NavigationBar
           siteTitle={data.site.siteMetadata.title}
           openMenu={openMenu}
           className={this.state.isScrolled ? '' : 'alt'}
@@ -122,9 +126,7 @@ class IndexPage extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
               </p>
-              <SpecialLink>
-                Learn more
-              </SpecialLink>
+              <SpecialLink>Learn more</SpecialLink>
             </article>
             <article>
               <a href="#" className="image">
@@ -135,9 +137,7 @@ class IndexPage extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
               </p>
-              <SpecialLink>
-                Learn more
-              </SpecialLink>
+              <SpecialLink>Learn more</SpecialLink>
             </article>
             <article>
               <a href="#" className="image">
@@ -148,9 +148,7 @@ class IndexPage extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
               </p>
-              <SpecialLink>
-                Learn more
-              </SpecialLink>
+              <SpecialLink>Learn more</SpecialLink>
             </article>
             <article>
               <a href="#" className="image">
@@ -161,9 +159,7 @@ class IndexPage extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
               </p>
-              <SpecialLink>
-                Learn more
-              </SpecialLink>
+              <SpecialLink>Learn more</SpecialLink>
             </article>
           </FeaturedItems>
           <ul className="actions">
@@ -175,7 +171,7 @@ class IndexPage extends Component {
           </ul>
         </Wrapper>
         <Footer />
-      </React.Fragment>
+      </div>
     );
   }
 }

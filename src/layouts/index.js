@@ -39,22 +39,23 @@ class Layout extends Component {
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        { location.pathname !== '/' && (
-            <NavigationBar
-              siteTitle={data.site.siteMetadata.title}
-              openMenu={this.openMenu}
-            />
-          )}
+        {location.pathname !== '/' && (
+          <NavigationBar
+            siteTitle={data.site.siteMetadata.title}
+            openMenu={this.openMenu}
+          />
+        )}
         <div className={this.state.isMenuOpen ? 'is-menu-visible' : ''}>
           <div
             id="page-wrapper"
             onClick={this.state.isMenuOpen ? this.closeMenu : undefined}
           >
             {children({ ...this.props, openMenu: this.openMenu })}
-          <Footer />
+            <Footer />
           </div>
           <Menu closeMenu={this.closeMenu}>
             <Link to="/">Home</Link>
+            <Link to="/generic">Generic</Link>
           </Menu>
         </div>
       </React.Fragment>

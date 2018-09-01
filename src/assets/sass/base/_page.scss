@@ -49,11 +49,12 @@
 								center;
 
 		// Stops initial animations until page loads.
-			&.is-preload {
-				*, *:before, *:after {
-					@include vendor('animation', 'none !important');
-					@include vendor('transition', 'none !important');
-				}
-			}
 
 	}
+
+  .is-preload {
+    *, *:before, *:after {
+      @include vendor('animation', 'none !important');
+      @include vendor('transition', 'none !important');
+    }
+  }

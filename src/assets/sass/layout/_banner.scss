@@ -119,7 +119,7 @@
 			}
 		}
 
-		body.is-preload & {
+		.is-preload & {
 			.logo {
 				@include vendor('transform', 'translateY(0.5em)');
 				opacity: 0;

@@ -38,6 +38,8 @@ class IndexPage extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.scrollListener);
+
+    // trigger banner animation
     setTimeout(() => {
       this.setState({ isMounted: true });
     }, 500);
@@ -56,7 +58,7 @@ class IndexPage extends Component {
           openMenu={openMenu}
           className={this.state.isScrolled ? '' : 'alt'}
         />
-        <Banner ref={this.bannerRef} />
+        <Banner siteTitle={data.site.siteMetadata.title} ref={this.bannerRef} />
         <SpotlightWrapper>
           <Spotlight>
             <a href="#" className="image">

@@ -6,6 +6,7 @@ import PageWrapper from '../components/PageWrapper';
 import Wrapper from '../components/Wrapper';
 import FeaturedItems from '../components/FeaturedItems';
 import SpecialLink from '../components/SpecialLink';
+import Button from '../components/Button';
 
 const Generic = () => (
   <PageWrapper>
@@ -105,76 +106,76 @@ while (!deck.isInOrder()) {
           <div className="col-6 col-12-medium">
             <ul className="actions">
               <li>
-                <a href="#" className="button primary">
+                <Button primary>
                   Default
-                </a>
+                </Button>
               </li>
               <li>
-                <a href="#" className="button">
+                <Button>
                   Default
-                </a>
+                </Button>
               </li>
             </ul>
             <ul className="actions small">
               <li>
-                <a href="#" className="button primary small">
+                <Button primary small>
                   Small
-                </a>
+                </Button>
               </li>
               <li>
-                <a href="#" className="button small">
+                <Button small>
                   Small
-                </a>
+                </Button>
               </li>
             </ul>
             <ul className="actions stacked">
               <li>
-                <a href="#" className="button primary">
+                <Button primary>
                   Default
-                </a>
+                </Button>
               </li>
               <li>
-                <a href="#" className="button">
+                <Button>
                   Default
-                </a>
+                </Button>
               </li>
             </ul>
             <ul className="actions stacked small">
               <li>
-                <a href="#" className="button primary small">
+                <Button primary small>
                   Small
-                </a>
+                </Button>
               </li>
               <li>
-                <a href="#" className="button small">
+                <Button small>
                   Small
-                </a>
+                </Button>
               </li>
             </ul>
           </div>
           <div className="col-6 col-12-medium">
             <ul className="actions stacked">
               <li>
-                <a href="#" className="button primary fit">
+                <Button primary fit>
                   Default
-                </a>
+                </Button>
               </li>
               <li>
-                <a href="#" className="button fit">
+                <Button fit>
                   Default
-                </a>
+                </Button>
               </li>
             </ul>
             <ul className="actions stacked small">
               <li>
-                <a href="#" className="button primary small fit">
+                <Button primary small fit>
                   Small
-                </a>
+                </Button>
               </li>
               <li>
-                <a href="#" className="button small fit">
+                <Button small fit>
                   Small
-                </a>
+                </Button>
               </li>
             </ul>
           </div>
@@ -182,7 +183,7 @@ while (!deck.isInOrder()) {
         <h4>Pagination</h4>
         <ul className="pagination">
           <li>
-            <span className="button small disabled">Prev</span>
+            <Button small disabled>Prev</Button>
           </li>
           <li>
             <a href="#" className="page active">
@@ -218,9 +219,9 @@ while (!deck.isInOrder()) {
             </a>
           </li>
           <li>
-            <a href="#" className="button small">
+            <Button small>
               Next
-            </a>
+            </Button>
           </li>
         </ul>
       </section>
@@ -324,80 +325,80 @@ while (!deck.isInOrder()) {
         <h3 className="major">Buttons</h3>
         <ul className="actions">
           <li>
-            <a href="#" className="button primary">
+            <Button primary>
               Primary
-            </a>
+            </Button>
           </li>
           <li>
-            <a href="#" className="button">
+            <Button>
               Default
-            </a>
+            </Button>
           </li>
         </ul>
         <ul className="actions">
           <li>
-            <a href="#" className="button large">
+            <Button large>
               Large
-            </a>
+            </Button>
           </li>
           <li>
-            <a href="#" className="button small">
+            <Button small>
               Small
-            </a>
+            </Button>
           </li>
         </ul>
         <ul className="actions fit">
           <li>
-            <a href="#" className="button fit">
+            <Button fit>
               Fit
-            </a>
+            </Button>
           </li>
           <li>
-            <a href="#" className="button primary fit">
+            <Button primary fit>
               Fit
-            </a>
+            </Button>
           </li>
           <li>
-            <a href="#" className="button fit">
+            <Button fit>
               Fit
-            </a>
+            </Button>
           </li>
         </ul>
         <ul className="actions fit small">
           <li>
-            <a href="#" className="button primary fit small">
+            <Button primary fit small>
               Fit + Small
-            </a>
+            </Button>
           </li>
           <li>
-            <a href="#" className="button fit small">
+            <Button fit small>
               Fit + Small
-            </a>
+            </Button>
           </li>
           <li>
-            <a href="#" className="button primary fit small">
+            <Button primary fit small>
               Fit + Small
-            </a>
+            </Button>
           </li>
         </ul>
         <ul className="actions">
           <li>
-            <a href="#" className="button primary icon fa-download">
+            <Button primary className="icon fa-download">
               Icon
-            </a>
+            </Button>
           </li>
           <li>
-            <a href="#" className="button icon fa-download">
+            <Button className="icon fa-download">
               Icon
-            </a>
+            </Button>
           </li>
         </ul>
         <ul className="actions">
           <li>
-            <span className="button primary disabled">Disabled</span>
+            <Button primary disabled>Disabled</Button>
           </li>
           <li>
-            <span className="button disabled">Disabled</span>
+            <Button disabled>Disabled</Button>
           </li>
         </ul>
       </section>
@@ -469,7 +470,11 @@ while (!deck.isInOrder()) {
             <div className="col-12">
               <ul className="actions">
                 <li>
-                  <input type="submit" value="Send Message" className="primary" />
+                  <input
+                    type="submit"
+                    value="Send Message"
+                    className="primary"
+                  />
                 </li>
                 <li>
                   <input type="reset" value="Reset" />

@@ -5,7 +5,7 @@ import Link from 'gatsby-link';
 
 import '../assets/sass/main.scss';
 
-import Header from '../components/header';
+import NavigationBar from '../components/NavigationBar';
 import Menu from '../components/Menu';
 
 class Layout extends Component {
@@ -28,9 +28,9 @@ class Layout extends Component {
   };
 
   render() {
-    const { children, data, match } = this.props;
+    const { children, data, location } = this.props;
     return (
-      <div>
+      <React.Fragment>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -38,9 +38,8 @@ class Layout extends Component {
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        {match.path !== '/' &&
-          match.isExact && (
-            <Header
+        { location.pathname !== '/' && (
+            <NavigationBar
               siteTitle={data.site.siteMetadata.title}
               openMenu={this.openMenu}
             />
@@ -56,7 +55,7 @@ class Layout extends Component {
             <Link to="/">Home</Link>
           </Menu>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -79,5 +79,77 @@ export const query = graphql`
         title
       }
     }
+
+    pic01: file(name: { eq: "pic01" }) {
+      childImageSharp {
+        sizes {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+
+    pic02: file(name: { eq: "pic02" }) {
+      childImageSharp {
+        sizes {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+
+    pic03: file(name: { eq: "pic03" }) {
+      childImageSharp {
+        sizes {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+
+    pic04: file(name: { eq: "pic04" }) {
+      childImageSharp {
+        sizes {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+
+    pic05: file(name: { eq: "pic05" }) {
+      childImageSharp {
+        sizes {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+
+    pic06: file(name: { eq: "pic06" }) {
+      childImageSharp {
+        sizes {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+
+    pic07: file(name: { eq: "pic07" }) {
+      childImageSharp {
+        sizes {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+
+    pic08: file(name: { eq: "pic08" }) {
+      childImageSharp {
+        sizes {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+
+    bg: file(name: { eq: "bg" }) {
+      childImageSharp {
+        sizes(quality: 80) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
   }
 `;

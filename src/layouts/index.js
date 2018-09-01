@@ -7,6 +7,7 @@ import '../assets/sass/main.scss';
 
 import NavigationBar from '../components/NavigationBar';
 import Menu from '../components/Menu';
+import Footer from '../components/Footer';
 
 class Layout extends Component {
   state = {
@@ -50,6 +51,7 @@ class Layout extends Component {
             onClick={this.state.isMenuOpen ? this.closeMenu : undefined}
           >
             {children({ ...this.props, openMenu: this.openMenu })}
+          <Footer />
           </div>
           <Menu closeMenu={this.closeMenu}>
             <Link to="/">Home</Link>

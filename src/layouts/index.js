@@ -56,6 +56,9 @@ class Layout extends Component {
           <Menu closeMenu={this.closeMenu}>
             <Link to="/">Home</Link>
             <Link to="/generic">Generic</Link>
+            <Link to="/elements">Elements</Link>
+            <Link to="/">Log In</Link>
+            <Link to="/">Sign Up</Link>
           </Menu>
         </div>
       </React.Fragment>

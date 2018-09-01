@@ -170,7 +170,6 @@ class IndexPage extends Component {
             </li>
           </ul>
         </Wrapper>
-        <Footer />
       </div>
     );
   }

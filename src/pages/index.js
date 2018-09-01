@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 
 import { debounce } from 'lodash';
 
@@ -62,7 +63,7 @@ class IndexPage extends Component {
         <SpotlightWrapper>
           <Spotlight>
             <a href="#" className="image">
-              <img src={pic01} alt="" />
+              <Img sizes={data.pic01.childImageSharp.sizes} />
             </a>
             <Content>
               <h2 className="major">Magna arcu feugiat</h2>
@@ -78,7 +79,7 @@ class IndexPage extends Component {
           </Spotlight>
           <Spotlight>
             <a href="#" className="image">
-              <img src={pic02} alt="" />
+              <Img sizes={data.pic02.childImageSharp.sizes} />
             </a>
             <Content>
               <h2 className="major">Tempus adipiscing</h2>
@@ -95,7 +96,7 @@ class IndexPage extends Component {
 
           <Spotlight>
             <a href="#" className="image">
-              <img src={pic03} alt="" />
+              <Img sizes={data.pic03.childImageSharp.sizes} />
             </a>
             <Content>
               <h2 className="major">Nullam dignissim</h2>
@@ -121,7 +122,7 @@ class IndexPage extends Component {
           <FeaturedItems>
             <article>
               <a href="#" className="image">
-                <img src="images/pic04.jpg" alt="" />
+                <Img sizes={data.pic04.childImageSharp.sizes}/>
               </a>
               <h3 className="major">Sed feugiat lorem</h3>
               <p>
@@ -132,7 +133,7 @@ class IndexPage extends Component {
             </article>
             <article>
               <a href="#" className="image">
-                <img src="images/pic05.jpg" alt="" />
+                <Img sizes={data.pic05.childImageSharp.sizes}/>
               </a>
               <h3 className="major">Nisl placerat</h3>
               <p>
@@ -143,7 +144,7 @@ class IndexPage extends Component {
             </article>
             <article>
               <a href="#" className="image">
-                <img src="images/pic06.jpg" alt="" />
+                <Img sizes={data.pic06.childImageSharp.sizes}/>
               </a>
               <h3 className="major">Ante fermentum</h3>
               <p>
@@ -154,7 +155,7 @@ class IndexPage extends Component {
             </article>
             <article>
               <a href="#" className="image">
-                <img src="images/pic07.jpg" alt="" />
+                <Img sizes={data.pic07.childImageSharp.sizes}/>
               </a>
               <h3 className="major">Fusce consequat</h3>
               <p>

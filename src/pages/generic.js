@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 
 import Header from '../components/Header';
 import PageWrapper from '../components/PageWrapper';
@@ -7,7 +8,7 @@ import Wrapper from '../components/Wrapper';
 import FeaturedItems from '../components/FeaturedItems';
 import SpecialLink from '../components/SpecialLink';
 
-const Generic = () => (
+const Generic = ({ data }) => (
   <PageWrapper>
     <Header>
       <h2>Generic</h2>
@@ -49,7 +50,7 @@ const Generic = () => (
       <FeaturedItems>
         <article>
           <a href="#" className="image">
-            <img src="images/pic04.jpg" alt="" />
+            <Img sizes={data.pic04.childImageSharp.sizes}/>
           </a>
           <h3 className="major">Sed feugiat lorem</h3>
           <p>
@@ -62,7 +63,7 @@ const Generic = () => (
         </article>
         <article>
           <a href="#" className="image">
-            <img src="images/pic05.jpg" alt="" />
+            <Img sizes={data.pic05.childImageSharp.sizes}/>
           </a>
           <h3 className="major">Nisl placerat</h3>
           <p>

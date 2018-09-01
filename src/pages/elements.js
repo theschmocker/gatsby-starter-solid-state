@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 
 import Header from '../components/Header';
 import PageWrapper from '../components/PageWrapper';
@@ -8,7 +9,7 @@ import FeaturedItems from '../components/FeaturedItems';
 import SpecialLink from '../components/SpecialLink';
 import Button from '../components/Button';
 
-const Generic = () => (
+const Elements = ({ data }) => (
   <PageWrapper>
     <Header>
       <h2>Elements</h2>
@@ -106,14 +107,10 @@ while (!deck.isInOrder()) {
           <div className="col-6 col-12-medium">
             <ul className="actions">
               <li>
-                <Button primary>
-                  Default
-                </Button>
+                <Button primary>Default</Button>
               </li>
               <li>
-                <Button>
-                  Default
-                </Button>
+                <Button>Default</Button>
               </li>
             </ul>
             <ul className="actions small">
@@ -123,21 +120,15 @@ while (!deck.isInOrder()) {
                 </Button>
               </li>
               <li>
-                <Button small>
-                  Small
-                </Button>
+                <Button small>Small</Button>
               </li>
             </ul>
             <ul className="actions stacked">
               <li>
-                <Button primary>
-                  Default
-                </Button>
+                <Button primary>Default</Button>
               </li>
               <li>
-                <Button>
-                  Default
-                </Button>
+                <Button>Default</Button>
               </li>
             </ul>
             <ul className="actions stacked small">
@@ -147,9 +138,7 @@ while (!deck.isInOrder()) {
                 </Button>
               </li>
               <li>
-                <Button small>
-                  Small
-                </Button>
+                <Button small>Small</Button>
               </li>
             </ul>
           </div>
@@ -161,9 +150,7 @@ while (!deck.isInOrder()) {
                 </Button>
               </li>
               <li>
-                <Button fit>
-                  Default
-                </Button>
+                <Button fit>Default</Button>
               </li>
             </ul>
             <ul className="actions stacked small">
@@ -183,7 +170,9 @@ while (!deck.isInOrder()) {
         <h4>Pagination</h4>
         <ul className="pagination">
           <li>
-            <Button small disabled>Prev</Button>
+            <Button small disabled>
+              Prev
+            </Button>
           </li>
           <li>
             <a href="#" className="page active">
@@ -219,9 +208,7 @@ while (!deck.isInOrder()) {
             </a>
           </li>
           <li>
-            <Button small>
-              Next
-            </Button>
+            <Button small>Next</Button>
           </li>
         </ul>
       </section>
@@ -325,33 +312,23 @@ while (!deck.isInOrder()) {
         <h3 className="major">Buttons</h3>
         <ul className="actions">
           <li>
-            <Button primary>
-              Primary
-            </Button>
+            <Button primary>Primary</Button>
           </li>
           <li>
-            <Button>
-              Default
-            </Button>
+            <Button>Default</Button>
           </li>
         </ul>
         <ul className="actions">
           <li>
-            <Button large>
-              Large
-            </Button>
+            <Button large>Large</Button>
           </li>
           <li>
-            <Button small>
-              Small
-            </Button>
+            <Button small>Small</Button>
           </li>
         </ul>
         <ul className="actions fit">
           <li>
-            <Button fit>
-              Fit
-            </Button>
+            <Button fit>Fit</Button>
           </li>
           <li>
             <Button primary fit>
@@ -359,9 +336,7 @@ while (!deck.isInOrder()) {
             </Button>
           </li>
           <li>
-            <Button fit>
-              Fit
-            </Button>
+            <Button fit>Fit</Button>
           </li>
         </ul>
         <ul className="actions fit small">
@@ -388,14 +363,14 @@ while (!deck.isInOrder()) {
             </Button>
           </li>
           <li>
-            <Button className="icon fa-download">
-              Icon
-            </Button>
+            <Button className="icon fa-download">Icon</Button>
           </li>
         </ul>
         <ul className="actions">
           <li>
-            <Button primary disabled>Disabled</Button>
+            <Button primary disabled>
+              Disabled
+            </Button>
           </li>
           <li>
             <Button disabled>Disabled</Button>
@@ -492,61 +467,65 @@ while (!deck.isInOrder()) {
           <div className="row gtr-uniform">
             <div className="col-12">
               <span className="image fit">
-                <img src="images/pic08.jpg" alt="" />
+                <Img sizes={data.bg.childImageSharp.sizes} />
               </span>
             </div>
             <div className="col-4">
               <span className="image fit">
-                <img src="images/pic05.jpg" alt="" />
+                <Img sizes={data.pic05.childImageSharp.sizes} />
               </span>
             </div>
             <div className="col-4">
               <span className="image fit">
-                <img src="images/pic06.jpg" alt="" />
+                <Img sizes={data.pic06.childImageSharp.sizes} />
               </span>
             </div>
             <div className="col-4">
               <span className="image fit">
-                <img src="images/pic07.jpg" alt="" />
+                <Img sizes={data.pic07.childImageSharp.sizes} />
               </span>
             </div>
             <div className="col-4">
               <span className="image fit">
-                <img src="images/pic07.jpg" alt="" />
+                <Img sizes={data.pic07.childImageSharp.sizes} />
               </span>
             </div>
             <div className="col-4">
               <span className="image fit">
-                <img src="images/pic05.jpg" alt="" />
+                <Img sizes={data.pic05.childImageSharp.sizes} />
               </span>
             </div>
             <div className="col-4">
               <span className="image fit">
-                <img src="images/pic06.jpg" alt="" />
+                <Img sizes={data.pic06.childImageSharp.sizes} />
               </span>
             </div>
             <div className="col-4">
               <span className="image fit">
-                <img src="images/pic06.jpg" alt="" />
+                <Img sizes={data.pic06.childImageSharp.sizes} />
               </span>
             </div>
             <div className="col-4">
               <span className="image fit">
-                <img src="images/pic07.jpg" alt="" />
+                <Img sizes={data.pic07.childImageSharp.sizes} />
               </span>
             </div>
             <div className="col-4">
               <span className="image fit">
-                <img src="images/pic05.jpg" alt="" />
+                <Img sizes={data.pic05.childImageSharp.sizes} />
               </span>
             </div>
           </div>
         </div>
         <h4>Left &amp; Right</h4>
         <p>
-          <span className="image left">
-            <img src="images/pic01.jpg" alt="" />
-          </span>
+          <Img
+            Tag="span"
+            className="image left"
+            imgStyle={{ position: 'relative' }}
+            placeholderStyle={{ position: 'absolute' }}
+            sizes={data.pic01.childImageSharp.sizes}
+          />
           Morbi mattis mi consectetur tortor elementum, varius pellentesque
           velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac
           scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis
@@ -572,9 +551,13 @@ while (!deck.isInOrder()) {
           cursus. Etiam ut gravida sapien.
         </p>
         <p>
-          <span className="image right">
-            <img src="images/pic02.jpg" alt="" />
-          </span>
+          <Img
+            Tag="span"
+            className="image right"
+            imgStyle={{ position: 'relative' }}
+            placeholderStyle={{ position: 'absolute' }}
+            sizes={data.pic02.childImageSharp.sizes}
+          />
           Vestibulum ultrices risus velit, sit amet blandit massa auctor sit
           amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis
           id vel diam. Praesent sit amet posuere risus, eu faucibus lectus.
@@ -602,4 +585,4 @@ while (!deck.isInOrder()) {
   </PageWrapper>
 );
 
-export default Generic;
+export default Elements;

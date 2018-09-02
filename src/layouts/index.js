@@ -38,6 +38,13 @@ class Layout extends Component {
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
+          link={[
+            {
+              rel: 'shortcut icon',
+              type: 'image/png',
+              href: '/icons/icon-48x48.png',
+            },
+          ]}
         />
         {location.pathname !== '/' && (
           <NavigationBar

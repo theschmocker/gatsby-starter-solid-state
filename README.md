@@ -7,13 +7,11 @@
   Gatsby Starter Solid State
 </h1>
 
-Kick off your project with this default boilerplate. This barebones starter ships with the main Gatsby configuration files you might need. 
-
 Start your Gatsby project with this starter, based on [HTML5Up's](https://html5up.net) [Solid State](https://html5up.net/solid-state) theme.
 
 _Check out Gatsby's collection of [official and community-created starters](https://next.gatsbyjs.org/docs/gatsby-starters/)._
 
-## Features
+## 🔥 Features
   * Built upon gatsby-starter-default
   * Based on the [Solid State](https://html5up.net/solid-state) theme
   * PWA out-of-the-box with gatsby-plugin-manifest and gatsby-plugin-offline
@@ -71,4 +69,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/theschmocker/gatsby-starter-solid-state)

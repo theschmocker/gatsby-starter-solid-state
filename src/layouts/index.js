@@ -45,7 +45,9 @@ class Layout extends Component {
               href: '/icons/icon-48x48.png',
             },
           ]}
-        />
+        >
+          <html lang="en" />
+        </Helmet>
         {location.pathname !== '/' && (
           <NavigationBar
             siteTitle={data.site.siteMetadata.title}

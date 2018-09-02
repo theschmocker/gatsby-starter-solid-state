@@ -92,7 +92,7 @@ export const query = graphql`
     pic01: file(name: { eq: "pic01" }) {
       childImageSharp {
         sizes {
-          ...GatsbyImageSharpSizes
+          ...GatsbyImageSharpSizes_withWebp
         }
       }
     }
@@ -100,7 +100,7 @@ export const query = graphql`
     pic02: file(name: { eq: "pic02" }) {
       childImageSharp {
         sizes {
-          ...GatsbyImageSharpSizes
+          ...GatsbyImageSharpSizes_withWebp
         }
       }
     }
@@ -108,7 +108,7 @@ export const query = graphql`
     pic03: file(name: { eq: "pic03" }) {
       childImageSharp {
         sizes {
-          ...GatsbyImageSharpSizes
+          ...GatsbyImageSharpSizes_withWebp
         }
       }
     }
@@ -116,7 +116,7 @@ export const query = graphql`
     pic04: file(name: { eq: "pic04" }) {
       childImageSharp {
         sizes {
-          ...GatsbyImageSharpSizes
+          ...GatsbyImageSharpSizes_withWebp
         }
       }
     }
@@ -124,7 +124,7 @@ export const query = graphql`
     pic05: file(name: { eq: "pic05" }) {
       childImageSharp {
         sizes {
-          ...GatsbyImageSharpSizes
+          ...GatsbyImageSharpSizes_withWebp
         }
       }
     }
@@ -132,7 +132,7 @@ export const query = graphql`
     pic06: file(name: { eq: "pic06" }) {
       childImageSharp {
         sizes {
-          ...GatsbyImageSharpSizes
+          ...GatsbyImageSharpSizes_withWebp
         }
       }
     }
@@ -140,7 +140,7 @@ export const query = graphql`
     pic07: file(name: { eq: "pic07" }) {
       childImageSharp {
         sizes {
-          ...GatsbyImageSharpSizes
+          ...GatsbyImageSharpSizes_withWebp
         }
       }
     }
@@ -148,7 +148,7 @@ export const query = graphql`
     pic08: file(name: { eq: "pic08" }) {
       childImageSharp {
         sizes {
-          ...GatsbyImageSharpSizes
+          ...GatsbyImageSharpSizes_withWebp
         }
       }
     }
@@ -156,7 +156,7 @@ export const query = graphql`
     bg: file(name: { eq: "bg" }) {
       childImageSharp {
         sizes(quality: 80) {
-          ...GatsbyImageSharpSizes
+          ...GatsbyImageSharpSizes_withWebp
         }
       }
     }
